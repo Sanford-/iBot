@@ -2117,7 +2117,7 @@ var iBot = {
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                                 if( !iBot.commands.executable(this.rank, chat) ) return void (0);
                                 else{
-                                    API.sendChat('/me [' + chat.from + ' Usou !skip.]');
+                                    API.sendChat('/me [' + chat.from + '] Usou !skip.]');
                                     API.moderateForceSkip();
                                     iBot.room.skippable = false;
                                     setTimeout(function(){ iBot.room.skippable = true}, 5*1000);
